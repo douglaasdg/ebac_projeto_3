@@ -1,0 +1,63 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #42aaaa;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #1f6666;;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-presente .nav-link.active:hover  {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #e6f2ff;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#nossa-historia, #presente-aos-noivos {
+    background-color: #e6feff;
+}
+
+.text-colored {
+    color: #42aaaa;
+}
+
+.nav-presente .nav-link.active,
+#confirme-sua-presenca button {
+    background-color: #42aaaa;
+    color: #fff;
+}
+
+.nav-presente .nav-link:hover {
+    color: #42aaaa;
+}
+
+.tab-content .tab-pane button {
+    background-color: #42aaaa;
+    color: #fff;
+}
+
+#text-history li {
+    list-style: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
