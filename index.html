@@ -368,19 +368,19 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
-                                <input type="text" id="nome" class="form-control" required>
+                                <input type="text" id="nome" class="form-control" placeholder="Nome completo" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
-                                <input type="email" id="email" class="form-control" required>
+                                <input type="email" id="email" class="form-control" placeholder="email@exemplo.com" required>
                             </div>
                             <div class="mb-3">
                                 <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
-                                <input type="tel" id="telefone" class="form-control">
+                                <input type="tel" id="telefone" class="form-control" placeholder="(xx) xxxxx-xxxx">
                             </div>
                             <div class="mb-3">
                                 <label for="mensagem" class="form-label fw-bold text-colored">Mensagem aos noivos</label>
-                                <textarea class="form-control" id="mensagem" required></textarea>
+                                <textarea class="form-control" id="mensagem" placeholder="Sua mensagem aqui" required></textarea>
                             </div>
                             <button type="submit" class="btn fw-bold">Confirmar presença</button>
                         </form>
@@ -425,6 +425,16 @@
         </section>
     </div>
     
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var elemento = document.getElementById('telefone');
+        
+        var opcoesDaMascara = {
+            mask: '(00) 00000-0000'
+        };
+        
+        var mask = IMask(elemento, opcoesDaMascara);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
